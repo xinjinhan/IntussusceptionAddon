@@ -421,6 +421,7 @@ def menu_func(self, context):
 
 def register():
     bpy.utils.register_class(Intus)
+    bpy.types.VIEW3D_MT_object.append(menu_func)
 
 
 def unregister():
